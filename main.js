@@ -41,15 +41,10 @@ likeGlyphs.forEach(glyph => glyph.addEventListener('click', (e) => {
           modal.hidden = false
           const modalMessage = document.querySelector('#modal-message')
           modalMessage.innerText = error
-          setTimeout(() =>{
-              modal.hidden = true
-          }, 5000)
+          // setTimeout(() => modal.className = "hidden", 3000)
+          setTimeout(() => {modal.hidden = true}, 3000)
         })
-        // console.log(likeGlyphs)
-   
-      //   fetch(baseUrl)
-          // .then (res => {debugger})
-          // .catch(res => console.log(baseUrl))
+
       
       
 
